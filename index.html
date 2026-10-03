@@ -122,7 +122,7 @@
   .stack span.ia-tag{border-color:var(--steel);color:var(--steel)}
 
   /* Telas ilustrativas feitas em CSS (troque por prints reais quando tiver) */
-  .mock{height:100%;padding:18px;display:flex;flex-direction:column;gap:10px;font-family:var(--body)}
+  .mock{height:100%;overflow:hidden;padding:18px;display:flex;flex-direction:column;gap:10px;font-family:var(--body)}
   .mock.auto{background:#F1F5F9}
   .mock.auto .topo{background:#0F172A;color:#F97316;font:800 14px var(--display);padding:10px 12px;border-radius:6px}
   .mock.auto .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;flex:1}
@@ -140,6 +140,21 @@
   .mock.turma .bar i{display:block;height:100%;width:64%;background:#34C46B}
   .mock.turma .row{display:flex;justify-content:space-between;border-bottom:1px solid #121812;padding:5px 0;font-size:11px;color:#8FA093}
   .mock.turma .row span:first-child::before{content:'';display:inline-block;width:9px;height:9px;border-radius:3px;background:#34C46B;margin-right:6px}
+
+
+  .mock.refri{background:#0B1622;color:#DCE7F2}
+  .mock.refri .t{font:800 17px var(--display);color:#7CC4FF}
+  .mock.refri .abas{display:flex;gap:6px;flex-wrap:wrap}
+  .mock.refri .abas span{font-size:10px;padding:3px 8px;border-radius:999px;border:1px solid #23384F;color:#8FA6BE}
+  .mock.refri .abas span.on{background:#7CC4FF;border-color:#7CC4FF;color:#0B1622}
+  .mock.refri .grade{display:grid;grid-template-columns:auto 1fr;gap:10px;flex:1}
+  .mock.refri .kpi{border:1px solid #23384F;border-radius:8px;padding:10px;font-size:11px;color:#8FA6BE}
+  .mock.refri .kpi strong{display:block;font-size:22px;color:#F4B740;margin:2px 0}
+  .mock.refri .kpi small{font-size:10px}
+  .mock.refri .mapa{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+  .mock.refri .mapa i{border-radius:5px;background:#1F7A4D}
+  .mock.refri .mapa i.w{background:#B8861B}
+  .mock.refri .mapa i.r{background:#A33A3A}
 
   /* MOMENTOS */
   .momentos{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px}
@@ -325,18 +340,24 @@
         </div>
       </article>
 
-      <!-- TERCEIRO PROJETO (RefrigeraTTO): é só preencher e apagar as marcações de comentário
       <article class="projeto">
-        <div class="tela"><img src="refrigeratto.jpg" alt=""></div>
+        <div class="tela" aria-hidden="true">
+          <img src="refrigeratto.jpg" alt="Tela inicial do RefrigerATTO com indicadores e gráficos (dados ilustrativos)">
+        </div>
         <div class="corpo">
-          <p class="tipo">Projeto no PCM</p>
-          <h3>RefrigeraTTO</h3>
-          <p>DESCRIÇÃO AQUI</p>
-          <ul class="feito"><li>FUNCIONALIDADE 1</li><li>FUNCIONALIDADE 2</li></ul>
-          <div class="stack"><span>Google Apps Script</span><span class="ia-tag">Feito com apoio de IA</span></div>
+          <p class="tipo">Ferramenta interna, PCM ATTO Sementes</p>
+          <h3>RefrigerATTO</h3>
+          <p>Painel de monitoramento das máquinas de refrigeração das câmaras frias, usado pela equipe na programação semanal para decidir onde atuar primeiro.</p>
+          <ul class="feito">
+            <li>Disponibilidade por máquina e por câmara, comparada com a meta</li>
+            <li>Central de alarmes com histórico classificado</li>
+            <li>Máquinas sem comunicação e paradas em aberto</li>
+            <li>Temperatura e umidade por câmara</li>
+            <li>Cálculos pesados feitos no servidor com cache, para carregar rápido mesmo com milhares de registros</li>
+          </ul>
+          <div class="stack"><span>Google Apps Script</span><span>Google Sheets</span><span>Google Forms</span><span>Indicadores MTBF/MTTR</span><span class="ia-tag">Feito com apoio de IA</span></div>
         </div>
       </article>
-      -->
 
     </div>
   </div>
