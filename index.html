@@ -79,8 +79,8 @@
   .lead{color:var(--muted);max-width:640px;margin:0 0 48px;font-size:18px}
 
   /* SOBRE */
-  .sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
-  .sobre-grid p{margin:0 0 16px;max-width:60ch}
+  .sobre-texto{columns:2 380px;column-gap:56px}
+  .sobre-texto p{margin:0 0 18px;break-inside:avoid}
   .ia{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--steel);border-radius:12px;padding:26px 28px}
   .ia h3{font:700 22px var(--display);margin:0 0 10px}
   .ia p{color:var(--muted);margin:0 0 12px}
@@ -227,17 +227,11 @@
   <div class="wrap">
     <h2>Da manutenção para o código</h2>
     <p class="lead">Minha base é técnica e de chão de fábrica. Hoje uso programação para organizar e acelerar o que vejo no dia a dia.</p>
-    <div class="sobre-grid">
-      <div>
-        <p>Comecei como jovem aprendiz na ATTO Sementes, com formação em eletromecânica pelo SENAI. Foi lá que conheci de perto a rotina de manutenção industrial e o quanto um bom planejamento faz diferença.</p>
-        <p>Hoje atuo no PCM, cuidando da programação semanal das equipes de elétrica e refrigeração. Uso Google Sheets, Apps Script e Python para automatizar tarefas repetitivas, organizar informações e criar painéis de acompanhamento.</p>
-        <p>Em paralelo, curso Ciência da Computação na UNEMAT e sigo estudando dados e tecnologia, sempre tentando aplicar o que aprendo em problemas reais.</p>
-      </div>
-      <div class="ia">
-        <h3>Trabalho junto com inteligência artificial</h3>
-        <p>Uso IA como parceira no desenvolvimento dos meus projetos: para planejar a estrutura, discutir soluções, revisar código e entender conceitos novos mais rápido.</p>
-        <p>As decisões, os testes e a adaptação para cada situação real ficam comigo. Para mim, saber usar bem essas ferramentas já faz parte de aprender tecnologia hoje.</p>
-      </div>
+    <div class="sobre-texto">
+      <p>Comecei como jovem aprendiz na ATTO Sementes, com formação em eletromecânica pelo SENAI. Foi lá que conheci de perto a rotina de manutenção industrial e o quanto um bom planejamento faz diferença.</p>
+      <p>Hoje atuo no PCM, cuidando da programação semanal das equipes de elétrica e refrigeração. Uso Google Sheets, Apps Script e Python para automatizar tarefas repetitivas, analisar dados de manutenção e criar painéis de acompanhamento.</p>
+      <p>Trabalho junto com inteligência artificial no dia a dia: uso IA como parceira para planejar a estrutura dos projetos, discutir soluções, revisar código, analisar dados e entender conceitos novos mais rápido. As decisões, os testes e a adaptação para cada situação real ficam comigo. Para mim, saber usar bem essas ferramentas já faz parte de aprender tecnologia hoje.</p>
+      <p>Em paralelo, curso Ciência da Computação na UNEMAT e sigo estudando dados e tecnologia, sempre tentando aplicar o que aprendo em problemas reais.</p>
     </div>
   </div>
 </section>
@@ -255,7 +249,7 @@
       <li>
         <p class="quando">2024 até 2027 (previsão)</p>
         <h3>Bacharelado em Ciência da Computação, UNEMAT</h3>
-        <p>Base em programação, sistemas operacionais, sistemas embarcados e desenvolvimento web.</p>
+        <p>Formação que vai da lógica de programação, algoritmos e estruturas de dados até banco de dados, programação orientada a objetos e matemática aplicada à computação. Nas disciplinas, já desenvolvi práticas de sistemas operacionais, experimentos com Arduino em sistemas embarcados e um portfólio em PHP em desenvolvimento web. Venho usando o curso para aprofundar minha base em dados, área em que pretendo desenvolver meu TCC.</p>
       </li>
       <li class="atual">
         <p class="quando">Desde abril de 2026</p>
@@ -273,7 +267,7 @@
     <div class="skills">
       <div>
         <h3>Automação e dados</h3>
-        <ul><li>Google Apps Script</li><li>Google Sheets e Excel</li><li>Python</li><li>Painéis de acompanhamento</li></ul>
+        <ul><li>Análise de dados e indicadores</li><li>Python</li><li>Google Apps Script</li><li>Google Sheets e Excel</li><li>Painéis de acompanhamento</li></ul>
       </div>
       <div>
         <h3>Desenvolvimento web</h3>
@@ -281,7 +275,7 @@
       </div>
       <div>
         <h3>Processos</h3>
-        <ul><li>Planejamento e Controle de Manutenção</li><li>Programação semanal de equipes</li><li>Eletromecânica industrial</li><li>Desenvolvimento com apoio de IA</li></ul>
+        <ul><li>Planejamento e Controle de Manutenção</li><li>Programação semanal de equipes</li><li>Indicadores de manutenção (MTBF, MTTR, disponibilidade)</li><li>Eletromecânica industrial</li></ul>
       </div>
     </div>
   </div>
@@ -311,7 +305,7 @@
             <li>Botão de contato direto pelo WhatsApp</li>
             <li>Veículo vendido fica visível por 24h e depois sai do site</li>
           </ul>
-          <div class="stack"><span>HTML/CSS</span><span>JavaScript</span><span>Firebase Firestore</span><span class="ia-tag">Feito com apoio de IA</span></div>
+          <div class="stack"><span>HTML/CSS</span><span>JavaScript</span><span>Firebase Firestore</span></div>
         </div>
       </article>
 
@@ -337,7 +331,7 @@
             <li>Modelos 3D da camiseta e do moletom</li>
             <li>Exportação para Excel por filtro</li>
           </ul>
-          <div class="stack"><span>Google Apps Script</span><span>Google Sheets</span><span>Three.js</span><span>SheetJS</span><span class="ia-tag">Feito com apoio de IA</span></div>
+          <div class="stack"><span>Google Apps Script</span><span>Google Sheets</span><span>Three.js</span><span>SheetJS</span></div>
         </div>
       </article>
 
@@ -356,7 +350,7 @@
             <li>Temperatura e umidade por câmara</li>
             <li>Cálculos pesados feitos no servidor com cache, para carregar rápido mesmo com milhares de registros</li>
           </ul>
-          <div class="stack"><span>Google Apps Script</span><span>Google Sheets</span><span>Google Forms</span><span>Indicadores MTBF/MTTR</span><span class="ia-tag">Feito com apoio de IA</span></div>
+          <div class="stack"><span>Google Apps Script</span><span>Google Sheets</span><span>Google Forms</span><span>Indicadores MTBF/MTTR</span></div>
         </div>
       </article>
 
@@ -374,7 +368,7 @@
             <li>Código orientado a objetos, dados compactados e cache no navegador para carregar rápido</li>
             <li>Exportação da posição de estoque para planilha</li>
           </ul>
-          <div class="stack"><span>Google Apps Script</span><span>JavaScript (POO)</span><span>Tailwind CSS</span><span>Google Sheets</span><span class="ia-tag">Feito com apoio de IA</span></div>
+          <div class="stack"><span>Google Apps Script</span><span>JavaScript (POO)</span><span>Tailwind CSS</span><span>Google Sheets</span></div>
         </div>
       </article>
 
@@ -425,7 +419,7 @@
 </section>
 
 <footer>
-  <div class="wrap">Heitor Claudino Porto, Alto Garças, MT. Site feito por mim com apoio de IA.</div>
+  <div class="wrap">Heitor Claudino Porto, Alto Garças, MT. </div>
 </footer>
 
 </body>
