@@ -107,7 +107,8 @@
   @media(max-width:760px){.skills{grid-template-columns:1fr}}
 
   /* PROJETOS */
-  .projetos{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px}
+  .projetos{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+  @media(max-width:860px){.projetos{grid-template-columns:1fr}}
   .projeto{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
   .projeto .tela{aspect-ratio:16/9;border-bottom:1px solid var(--line);overflow:hidden}
   .projeto .tela img{width:100%;height:100%;object-fit:cover}
@@ -356,6 +357,24 @@
             <li>Cálculos pesados feitos no servidor com cache, para carregar rápido mesmo com milhares de registros</li>
           </ul>
           <div class="stack"><span>Google Apps Script</span><span>Google Sheets</span><span>Google Forms</span><span>Indicadores MTBF/MTTR</span><span class="ia-tag">Feito com apoio de IA</span></div>
+        </div>
+      </article>
+
+      <article class="projeto">
+        <div class="tela"><img src="estoque.jpg" alt="Painel de Estoque com indicadores de ruptura e excesso (dados ilustrativos)"></div>
+        <div class="corpo">
+          <p class="tipo">Ferramenta interna, PCM ATTO Sementes</p>
+          <h3>Painel de Estoque Integrado</h3>
+          <p>Painel para agilizar requisições de materiais e mostrar, de forma rápida, o que está abaixo do mínimo, acima do máximo ou sem estoque.</p>
+          <ul class="feito">
+            <li>Três setores no mesmo painel: PCM, PCI e Ração e Adubo</li>
+            <li>Indicadores de ruptura e excesso que filtram a tabela com um clique</li>
+            <li>Resumo por família e agrupamento, busca por vários termos e filtro de itens em estoque</li>
+            <li>Histórico de cada material nas OS e requisições</li>
+            <li>Código orientado a objetos, dados compactados e cache no navegador para carregar rápido</li>
+            <li>Exportação da posição de estoque para planilha</li>
+          </ul>
+          <div class="stack"><span>Google Apps Script</span><span>JavaScript (POO)</span><span>Tailwind CSS</span><span>Google Sheets</span><span class="ia-tag">Feito com apoio de IA</span></div>
         </div>
       </article>
 
